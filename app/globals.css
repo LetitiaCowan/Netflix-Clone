@@ -37,7 +37,7 @@ body {
 /* html, body, heading */
 @layer base {
   body {
-    @apply bg-slate-500;
+    @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
   }
 
   header {

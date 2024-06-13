@@ -22,17 +22,8 @@ interface Props {
 }
 
 // pushing the api data through and giving it type "Probs" which we declared above
-const Home = async ({
-  netflixOriginals,
-  actionMovies,
-  comedyMovies,
-  documentaries,
-  horrorMovies,
-  romanceMovies,
-  topRated,
-  trendingNow,
-}: Props) => {
-  const movies = await fetchMovies();
+const Home = async () => {
+  const movies: Props = await fetchMovies();
 
   return (
     <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
@@ -43,14 +34,12 @@ const Home = async ({
           <Row title="Trending Now" movies={movies.trendingNow} />
           <Row title="Top Rated" movies={movies.topRated} />
           <Row title="Action Thrillers" movies={movies.actionMovies} />
-          {/* My List Component */}
           <Row title="Comedies" movies={movies.comedyMovies} />
           <Row title="Scary Movies" movies={movies.horrorMovies} />
           <Row title="Romance Movies" movies={movies.romanceMovies} />
           <Row title="Documentaries" movies={movies.documentaries} />
         </section>
       </main>
-      {/* Modal */}
     </div>
   );
 };

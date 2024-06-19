@@ -3,11 +3,13 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import React, { useReducer, useRef, useState } from "react";
 import Thumbnail from "./Thumbnail";
 import { RiOrderPlayFill } from "react-icons/ri";
+import { Movie } from "@/typings";
 
 // its kind of like assigning specific typed to parts of your code for error reduction
 // of course title with be a type of string, whereas movie we assign to Movie[]
 interface Props {
   title: string;
+  movies: Movie[];
   // movie: movie | DocumnetData[]
 }
 

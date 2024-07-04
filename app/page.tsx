@@ -1,3 +1,4 @@
+"use client";
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
 import Row from "@/components/Row";
@@ -6,6 +7,7 @@ import fetchMovies from "@/utis/fetchMovies";
 import requests from "@/utis/requests";
 import Image from "next/image";
 import React from "react";
+import Link from 'next/link'
 
 // now that out Movie[] interfave was created and imported, we can now assign that
 // tp our api data req, we are now storing that in a interface called "Props" to the

@@ -71,4 +71,8 @@ body {
     bottom: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .input {
+    @apply w-full rounded bg-[#333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
+  }
 }
